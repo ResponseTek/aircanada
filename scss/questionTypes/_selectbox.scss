@@ -1,0 +1,21 @@
+.select-style {
+    border: $input-border;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    overflow: hidden;
+	color: $input-placeholder-color;
+	background-color: $input-background;
+}
+select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+	background-color: $input-background;
+    transition: box-shadow 0.4s ease-out;
+}
+select:focus {
+    outline: none;
+    border: $input-border-focus;;
+}

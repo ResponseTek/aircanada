@@ -1,0 +1,161 @@
+@import 'vendors/normalize';
+@import 'branding/configuration';
+@import 'branding/fonts';
+@import 'vendors/simple-grid';
+@import 'vendors/animate';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/buttons';
+@import 'components/questions-general';
+@import 'components/content-pages';
+@import 'components/mobile-settings';
+@import 'helpers/helpers';
+@import 'helpers/markers';
+// *** QUESTION TYPES ***
+@import 'questionTypes/radio-button-simple';
+@import 'questionTypes/radio-vertical';
+@import 'questionTypes/radio-horizontal';
+@import 'questionTypes/radio-matrix';
+@import 'questionTypes/radio-horizontal-image';
+@import 'questionTypes/radio-horizontal-rating';
+@import 'questionTypes/checkbox-vertical';
+@import 'questionTypes/checkbox_vertical_marker';
+@import 'questionTypes/checkbox-horizontal';
+@import 'questionTypes/checkbox-horizontal-image';
+@import 'questionTypes/input';
+@import 'questionTypes/selectbox';
+// @import 'questionTypes/star-rating';
+// @import 'questionTypes/star-rating-svg';
+// @import 'questionTypes/star-rating-img';
+// @import 'questionTypes/dragdrop.scss';;
+// @import 'questionTypes/switch.scss';
+// @import 'questionTypes/smiley-face.scss';
+// @import 'questionTypes/slider.scss';
+// // RT LOGO VERSION
+body {
+	background-color: #020203;
+  background-image: url("../images/background-dark.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-size: cover;
+	min-height: 100%;
+	margin: 0px;
+	font-family: $question-font;
+	@media (max-width: 600px) {
+		background-size: cover;
+	}
+}
+// LIGHT BACKGROUND IMAGE
+// body {
+// 	background-color: #fff;
+// 	background-image: url("../images/background-light.jpg");
+// 	background-position: right bottom;
+// 	background-repeat: no-repeat;
+// 	background-attachment:fixed;
+// 	background-size: cover;
+// 	min-height: 100%;
+// 	padding: 10px;
+// 	margin: 0px;
+// }
+// DARK BACKGROUND IMAGE
+// body {
+// 	background-color: #fff;
+// 	background-image: url("../images/background-dark.jpg");
+// 	background-position: right bottom;
+// 	background-repeat: no-repeat;
+// 	background-attachment:fixed;
+// 	background-size: cover;
+// 	min-height: 100%;
+// 	padding: 10px;
+// 	margin: 0px;
+// }
+.container {
+	margin-bottom: 50px;
+}
+.img-responsive {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+.special-text {
+	border: $btn-1-border;
+	border-radius: 4px;
+	p {
+		padding: 0px 10px;
+	}
+}
+.special-text-reversed {
+	background-color: $primary-color;
+	border-radius: 4px;
+	p {
+		padding: 0px 10px;
+		color: $callout-label-font-color;
+	}
+}
+.tag-reversed {
+	background-color: $callout-label-background;
+	color: $callout-label-font-color;
+	padding: 5px 10px;
+	font-size: $paragraph-font-size;
+	border-radius: 4px;
+	@media (max-width: 600px) {
+	    font-size: $mobile-callout-label-font-size;
+	}
+}
+.ui-widget-header {
+	background: $primary-color;
+	border: 0;
+}
+.ui-progressbar .ui-progressbar-value {
+	margin: 0px;
+}
+.progress-wrapper {
+	margin: 20px 0px;
+}
+hr {
+	border-top: 1px solid $primary-color;
+}
+ul {
+	padding: 0px;
+}
+.tabs{
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	>li{
+		transition-duration: .25s;
+		display: table-cell;
+		list-style: none;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+		padding: 5px;
+		opacity: .3;
+		color: $color-brand-primary;
+		&:hover {
+			&:before {
+				-webkit-transform: translateY(70%);
+				transform: translateY(70%);
+			}
+		}
+		&.active {
+			color: $color-brand-primary;
+			border-bottom: 2px solid $color-brand-primary;
+			opacity: 1;
+			&:before{
+				transition-duration: .5s;
+				background-color: white;
+				-webkit-transform: translateY(0);
+				transform: translateY(0);
+			}
+		}
+	}
+}
+.intro-text {
+	font-weight: $intro-text-font-weight;
+	font-size: $intro-text-font-size;
+}
+.bottom-bdr {
+	border-bottom: 1px solid #00adf3;
+}

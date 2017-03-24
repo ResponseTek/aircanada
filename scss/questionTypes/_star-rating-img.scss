@@ -1,0 +1,53 @@
+.star-rating-img {
+  margin: 50px auto;
+}
+.star-rating-img > label{
+  float: right;
+}
+.star-rating-img label {
+  height: 40px;
+  width: 20%;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  &:hover:after {
+    color: red;
+    content: "\2605";
+    color: $color-brand-primary;
+  }
+  &:active:after {
+    color: lighten($color-brand-primary, 20%); 
+  }
+  &:after {
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    content: "\2606";
+    color: $color-brand-primary;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 70px;
+  }
+}
+
+.star-rating-img input[type="radio"] {
+  display: none;
+}
+
+.star-rating-img > label:hover {
+  ~ label:after {
+      content: "\2605";
+      color: red;
+  }
+}
+
+.star-rating-img input[type="radio"]:checked {
+  + label:after, ~ label:after {
+      content: "\2605";
+      color: $color-brand-primary;
+  }
+}
+
+

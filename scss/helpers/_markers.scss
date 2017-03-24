@@ -1,0 +1,57 @@
+.marker-radio label:before {
+	content: "\f1db";
+	font-family: "FontAwesome";
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	width: 1em;
+	display: inline-block;
+	margin-right: 5px;
+	margin-left: 0px;
+}
+.marker-radio input[type=radio]:checked + label:before {
+  content: "\f192";
+  color: $answer-opt-active-color;
+}
+.marker-radio-b label:before {
+	content: "\f10c";
+	font-family: "FontAwesome";
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	width: 1em;
+	display: inline-block;
+	margin-right: 5px;
+	margin-left: 0px;
+}
+.marker-radio-b input[type=radio]:checked + label:before {
+  content: "\f05d";
+  color: $answer-opt-active-color;
+}
+.marker-checkbox label:before {
+	content: "\f096";
+	font-family: "FontAwesome";
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	width: 1em;
+	display: inline-block;
+	margin-right: 5px;
+	margin-left: 0px;
+}
+.marker-checkbox input[type="checkbox"]:checked + label:before {
+  content: "\f046";
+  color: $answer-opt-active-color;
+}

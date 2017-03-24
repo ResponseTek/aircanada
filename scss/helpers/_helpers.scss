@@ -1,0 +1,77 @@
+// SPACING HELPERS
+.pad-top-5 {
+	padding-top: 5px;
+}
+.pad-top-10 {
+	padding-top: 10px;
+}
+.pad-top-15 {
+	padding-top: 15px;
+}
+.pad-top-20 {
+	padding-top: 20px;
+}
+.pad-top-25 {
+	padding-top: 25px;
+}
+.pad-top-30 {
+	padding-top: 30px;
+}
+.margin-top-5 {
+	margin-top: 5px;
+}
+.margin-top-10 {
+	margin-top: 10px;
+}
+.margin-top-15 {
+	margin-top: 15px;
+}
+.margin-top-20 {
+	margin-top: 20px;
+}
+.margin-top-25 {
+	margin-top: 25px;
+}
+.margin-top-30 {
+	margin-top: 30px;
+}
+.margin-bottom-5 {
+	margin-bottom: 5px;
+}
+.margin-bottom-10 {
+	margin-bottom: 10px;
+}
+.margin-bottom-15 {
+	margin-bottom: 15px;
+}
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+.margin-bottom-25 {
+	margin-bottom: 25px;
+}
+.margin-bottom-30 {
+	margin-bottom: 30px;
+}
+// MISC HELPERS
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+.text-center {
+	display: block;
+	text-align: center;
+}
+.hidden {
+	display: none;
+}
+  @media (min-width: 601px) {
+      .hidden-desktop {
+        display: none;
+      }
+  }
+  @media (max-width: 600px) {
+      .hidden-mobile {
+        display: none;
+      }
+  }

@@ -1,0 +1,45 @@
+.radio-button-horizontal-rating {
+	padding-left: 5px 0px;
+	display: inline;
+}
+.radio-button-horizontal-rating:last-of-type {
+  padding-left: 5px 0px;
+  display: inline;
+}
+.radio-button-horizontal-rating input[type="radio"] {
+  display: none;
+}
+.radio-button-horizontal-rating label {
+  background-color: $answer-opt-background;
+  color: $answer-font-color;
+  font-family: $answer-font;
+  border: $answer-opt-border;
+  border-radius: 4px;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 1.2em;
+  text-align: center;
+  -webkit-transition: color 0.4s ease-out;
+	transition: color 0.4s ease-out;
+	&:hover {
+		background-color: $answer-opt-hover-background;
+		color: $answer-opt-hover-color;
+		border: $answer-opt-hover-border;
+	}
+	&:active {
+		background-color: $answer-opt-active-background;
+		color: $answer-opt-active-color;
+		border: $answer-opt-active-border;
+	}
+  @media (max-width: 600px) {
+    padding: 5px;
+    margin-right: 0px;
+  }
+}
+.radio-button-horizontal-rating input[type=radio]:checked + label {
+  background-color: $answer-opt-active-background;
+  color: $answer-opt-active-color;
+	border: $answer-opt-active-border;
+  -webkit-transition: background-color 0.4s ease-in;
+	transition: background-color 0.4s ease-in;
+}

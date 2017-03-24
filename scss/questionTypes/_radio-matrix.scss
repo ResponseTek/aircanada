@@ -1,0 +1,73 @@
+.radio-matrix {
+	display: inline;
+}
+
+.radio-matrix input[type="radio"] {
+  display: none;
+}
+
+.radio-matrix label {
+  background-color: $answer-opt-background;
+  color: $answer-font-color;
+  border: $answer-opt-border;
+  font-family: $answer-font;
+  border-radius: 4px;
+  margin-right: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: $answer-font-size;
+  -webkit-transition: color 0.4s ease-out;
+	transition: color 0.4s ease-out;
+
+	&:hover {
+		background-color: $answer-opt-hover-background;
+		color: $answer-opt-hover-color;
+		border: $answer-opt-hover-border;
+	}
+	&:active {
+		background-color: $answer-opt-active-background;
+		color: $answer-opt-active-color;
+		border: $answer-opt-active-border;
+	}
+  @media (max-width: 600px) {
+      font-size: $mobile-answer-font-size;
+      padding: 10px 0px;
+      margin-right: 2px;
+  }
+}
+.radio-matrix input[type=radio]:checked + label {
+  background-color: $answer-opt-active-background;
+  color: $answer-opt-active-color;
+	border: $answer-opt-active-border;
+  -webkit-transition: background-color 0.4s ease-in;
+	transition: background-color 0.4s ease-in;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 1em;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+}
+.table-grid {
+  table-layout: fixed;
+
+  tr {
+    margin: 10px 0;
+  }
+}
+.table-left-text {
+    display: table-cell;
+    text-align: left;
+}
+tr > td {
+  padding: 10px 0;
+}
+
+tr > th {
+  border-bottom: 1px solid $paragraph-font-color;
+  padding:  10px 0;
+  color: $question-font-color;
+
+}

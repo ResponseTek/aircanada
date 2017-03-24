@@ -1,0 +1,27 @@
+h1, h2, h3, h4, h5, h6 {
+	font-family: $title-font;
+	font-weight: $title-font-weight;
+	color: $primary-color;
+}
+p, label, strong, table, a {
+	font-family: $paragraph-font;
+	font-size: $paragraph-font-size;
+	@media (max-width: 600px) {
+	    font-size: $mobile-paragraph-font-size;
+	}
+}
+p, label, strong, table {
+	color: $paragraph-font-color;
+	margin: 5px 0px;
+}
+a {
+ color: $link-color;
+ font-weight: $paragraph-font-weight;
+ text-decoration: $text-decoration;
+	&:hover {
+		color: $link-color-hover;
+	}
+	&:active {
+	 	color: $link-color-active;
+	}
+}

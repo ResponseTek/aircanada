@@ -1,0 +1,66 @@
+.radio-button-horizontal-img {
+	padding: 0px;
+}
+.radio-button-horizontal-img label {
+  display: block;
+  border: $answer-opt-border;
+  border-radius: 4px;
+  position: relative;
+  margin: 0px;
+  cursor: pointer;
+	&:hover {
+		color: darken($answer-opt-hover-color, 10%);
+		img {
+			transform: scale(1);
+			}		
+	}
+	&:active {
+		img {
+			transform: scale(1);
+			}
+	}
+}
+.radio-button-horizontal-img input[type="radio"] {
+  display: none;
+}
+.radio-button-horizontal-img label:before {
+  color: $answer-opt-active-color;
+  content: " ";
+  display: block;
+  border-radius: 4px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+.radio-button-horizontal-img label img {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  transform: scale(.9);
+  display: block;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+.radio-button-horizontal-img input[type=radio].radio-button-horizontal-img:checked + label {
+  border-color: #000;
+}
+.radio-button-horizontal-img input[type=radio]:checked + label:before {
+  content: "✓";
+  background-color: $answer-opt-active-background;
+  transform: scale(1);
+  z-index: 9999;
+}
+.radio-button-horizontal-img input[type=radio]:checked + label img {
+  transform: scale(1);
+ // box-shadow: 0 0 5px #333; 
+  z-index: -1;
+}
+.image-label {
+  padding: 10px;
+}

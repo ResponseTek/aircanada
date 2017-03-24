@@ -1,0 +1,40 @@
+.checkbox-button-marker {
+	padding: 0px;
+}
+.checkbox-button-marker input[type="checkbox"] {
+  display: none;
+}
+.checkbox-button-marker label {
+	background-color: $answer-opt-background;
+  color: $answer-font-color;
+  font-family: $answer-font;
+  border: $answer-opt-border;
+  font-family: $answer-font;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: $answer-font-size;
+  -webkit-transition: color 0.4s ease-out;
+  transition: color 0.4s ease-out;
+  cursor: pointer;
+	&:hover {
+		background-color: $answer-opt-hover-background;
+		color: $answer-font-color;
+		border: $answer-opt-hover-border;
+	}
+	&:active {
+		background-color: $answer-opt-active-background;
+		color: $answer-font-color;
+		border: $answer-opt-active-border;
+	}
+  @media (max-width: 600px) {
+    font-size: $mobile-answer-font-size;
+  }
+}
+
+.checkbox-button-marker input[type="checkbox"]:checked + label {
+  background-color: $answer-opt-active-background;
+  color: $answer-opt-active-color;
+	border: $answer-opt-active-border;
+  -webkit-transition: background-color 0.4s ease-in;
+	transition: background-color 0.4s ease-in;
+}

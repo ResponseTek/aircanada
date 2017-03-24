@@ -1,0 +1,23 @@
+// Import FontAwesome
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css";
+.question-text {
+	font-weight: $question-font-weight;
+	margin-bottom: 0px;
+	font-size: $question-font-size;
+	color: $question-font-color;
+	font-family: $question-font;
+	// margin-top: 20px;
+	@media (max-width: 600px) {
+		font-size: $mobile-question-font-size;
+	}
+}
+label,
+legend {
+  display: block;
+  margin-bottom: 0px;
+	cursor: pointer;
+}
+.question-wrap {
+	display: block;
+	margin: 0 0 40px 0;
+}

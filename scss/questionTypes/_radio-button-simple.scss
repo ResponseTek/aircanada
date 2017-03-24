@@ -1,0 +1,83 @@
+  @media (min-width: 601px) {
+	// DESKTOP
+	.radio-button-simple {
+		padding: 5px 0px;
+		text-align: center;
+
+	}
+	.radio-button-simple input[type="radio"] {
+	  display: none;
+	}
+	.radio-button-simple label {
+	  background-color: $answer-opt-background;
+	  border: $answer-opt-border;
+	  border-radius: 100%;
+	  text-align: center;
+	  -webkit-transition: color 0.4s ease-out;
+		transition: color 0.4s ease-out;
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		cursor: pointer;
+		&:hover {
+			background-color: $answer-opt-hover-background;
+			color: $answer-opt-hover-color;
+      border: $answer-opt-hover-border;
+		}
+		&:active {
+			background-color: $answer-opt-active-background;
+			color: $answer-opt-active-color;
+      border: $answer-opt-active-border;
+		}
+
+	}
+	.radio-button-simple input[type=radio]:checked + label {
+	  background-color: $answer-opt-active-background;
+	  color: $answer-opt-active-color;
+    border: $answer-opt-active-border;
+	  -webkit-transition: background-color 0.4s ease-in;
+		transition: background-color 0.4s ease-in;
+	}
+  }
+  @media (max-width: 600px) {
+	// MOBILE
+	.radio-button-simple {
+		padding: 5px 0px;
+		text-align: center;
+	}
+	.radio-button-simple input[type="radio"] {
+	  display: none;
+	}
+	.radio-button-simple label {
+	  background-color: $answer-opt-background;
+	  border: $answer-opt-border;
+	  border-radius: 4px;
+	  text-align: center;
+	  display: inline-block;
+	  width: 100%;
+	  cursor: pointer;
+	  color: $answer-font-color;
+	  font-family: $answer-font;
+	  padding: 10px 0px;
+	  font-size: $answer-font-size;
+	  -webkit-transition: color 0.4s ease-out;
+	  transition: color 0.4s ease-out;
+	  cursor: pointer;
+	  line-height: 25px;
+
+		&:hover {
+			background-color: $answer-opt-hover-background;
+			color: $answer-opt-hover-color;
+		}
+		&:active {
+			background-color: $answer-opt-active-background;
+			color: $answer-opt-active-color;
+		}
+	}
+	.radio-button-simple input[type=radio]:checked + label {
+	  background-color: $answer-opt-active-background;
+	  color: $answer-opt-active-color;
+	  -webkit-transition: background-color 0.4s ease-in;
+		transition: background-color 0.4s ease-in;
+	  }
+  }

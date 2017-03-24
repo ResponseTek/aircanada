@@ -1,0 +1,254 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700);
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+
+$brand-logo: url("../images/brand/rt_logo.png");
+
+$color-brand-primary: #00adf3;
+$color-text-primary: #333;
+$color-text-secondary: #000000;
+$color-lightest: #ffffff;
+$color-light-grey: #F5F5F5;
+
+$color-error: #CB1027;
+
+// Telus = #4B286D
+// Telus Alt = #57a708
+// Telus Alt = #8c68a6
+// Rogers = #DA291C
+// Tmobile = #E4107E
+// TD = #34B233
+
+$primary-color: #D8292F;
+$secondary-color: #606060;
+$light-color: #fff;
+$default: #f1f1f1;
+
+$font-stack-1: roboto, Helvetica, sans-serif;
+$font-stack-2: satisfy, cursive;
+
+//TEXT ELEMENTS
+$paragraph-font-size: 18px;
+$paragraph-font-color: $light-color;
+$paragraph-font: $font-stack-1;
+$paragraph-font-weight: 300;
+
+$intro-text-font-size: 26px;
+$intro-text-font-weight: 400;
+
+
+$link-color: #ffffff;
+$link-color-hover: $primary-color;
+$link-color-active: $primary-color;
+$text-decoration: underline;
+
+$callout-label-font-size: 11px;
+$callout-label-font-color: $light-color;
+$callout-label-background: $primary-color;
+$callout-label-font: $font-stack-1;
+$callout-label-font-weight: 300;
+
+$title-font-size: 16px;
+$title-font-color: $primary-color;
+$title-font: $font-stack-1;
+$title-font-weight: 300;
+
+// QUESTION TEXT
+$question-font-size: 18px;
+$question-font-color: $light-color;
+$question-font: $font-stack-1;
+$question-font-weight: light;
+
+// ANSWER OPTION
+$answer-font-size: 14px;
+$answer-font-color: #4F4F4F;
+$answer-font: $font-stack-1;
+$answer-font-weight: 300;
+$answer-opt-background: #ffffff;
+$answer-opt-border: 1px #ffffff solid;
+
+$answer-opt-hover-background: #E4E4E4;
+$answer-opt-hover-color: #4F4F4F;
+$answer-opt-hover-border: 1px #E4E4E4 solid;
+
+$answer-opt-active-background: #D8292F;
+$answer-opt-active-border: 1px #D8292F solid;
+$answer-opt-active-color: #ffffff;
+
+//FOR DRAG AND DROP
+$answer-opt-drop-area: 2px $primary-color dotted;
+
+//SLIDER OPTIONS
+$slider-handle: $primary-color;
+$slider-background: $default;
+
+//INPUTS
+$input-background: #ffffff;
+$input-border: 1px solid #E4E4E4;
+$input-placeholder-color: #4F4F4F;
+
+$input-background-focus: #ffffff;
+$input-border-focus: 1px solid $primary-color;
+
+//BUTTONS BUTTON 1
+$btn-1-bg-color: #D8292F;
+$btn-1-border: #D8292F 1px solid;
+$btn-1-font: $font-stack-1;
+$btn-1-font-color: $light-color;
+$btn-1-font-weight: 300;
+$btn-1-font-size: 18px;
+
+$btn-1-bg-color-hover: lighten($primary-color, 2%);
+$btn-1-border-hover: lighten($primary-color, 2%) 1px solid;
+$btn-1-font-color-hover: $light-color;
+
+$btn-1-bg-color-active: darken($primary-color, 5%);
+$btn-1-border-active: darken($primary-color, 5%) 1px solid;
+$btn-1-font-color-active: $light-color;
+
+
+
+//BUTTONS BUTTON 2
+$btn-2-bg-color: $default;
+$btn-2-border: 1px solid $default;
+$btn-2-font: $font-stack-1;
+$btn-2-font-color: $secondary-color;
+$btn-2-font-weight: 300;
+$btn-2-font-size: 18px;
+
+$btn-2-bg-color-hover: lighten($default, 2%);
+$btn-2-border-hover: 1px solid lighten($default, 2%);
+$btn-2-font-color-hover: lighten($secondary-color, 4%);
+
+$btn-2-bg-color-active: darken($default, 5%);
+$btn-2-border-active: 1px solid darken($default, 5%);
+$btn-2-font-color-active: darken($secondary-color, 5%);
+
+
+//FINE TEXT
+$fine-print-size: 12px;
+$fine-print-color: #D8292F;
+$fine-print-weight: 200;
+
+$line-separator-color: #FFFFFF;
+
+//MOBILE FONT SETTINGS
+$mobile-paragraph-font-size: 14px;
+$mobile-callout-label-font-size: 11px;
+$mobile-title-font-size: 16px;
+$mobile-question-font-size: 14px;
+$mobile-answer-font-size: 12px;
+$mobile-btn-1-font-size: 14px;
+$mobile-btn-2-font-size: 14px;
+
+
+
+// ###########################################
+
+// $general-company-logo: 1;
+// $general-content-alignment: 1;
+// $general-page-background-color: 1;
+// $general-page-background-img: 1;
+
+// $text-link-font-family: 1;
+// $text-link-font-size: 1;
+// $text-link-font-weight: 1;
+// $text-link-font-decoration: 1;
+// $text-link-font-italics: 1;
+// $text-link-font-color: 1;
+// $text-link-font-color-hover: 1;
+// $text-link-font-color-pressed: 1;
+// $text-link-font-color-focused: 1;
+
+// $question-font-family: 1;
+// $question-font-weight: 1;
+// $question-font-size: 1;
+// $question-font-color: 1;
+
+// $answer-font-family: 1;
+// $answer-font-weight: 1;
+// $answer-font-size: 1;
+
+// $answer-font-background-color: 1;
+// $answer-font-color: 1;
+// $answer-border-color: 1;
+// $answer-border-radius: 1px;
+
+// $answer-font-background-color-hover: 1;
+// $answer-font-color-hover: 1;
+// $answer-border-color-hover: 1;
+// $answer-border-radius-hover: 1px;
+
+// $answer-font-background-color-pressed: 1;
+// $answer-font-color-pressed: 1;
+// $answer-border-color-pressed: 1;
+// $answer-border-radius-pressed: 1px;
+
+// $answer-font-background-color-focused: 1;
+// $answer-font-color-pressed-focused: 1;
+// $answer-border-color-pressed-focused: 1;
+// $answer-border-radius-pressed-focused: 1px;
+
+
+// $button1-font-family: 1;
+// $button1-font-weight: 1;
+// $button1-font-size: 1;
+
+// $button1-font-background-color: 1;
+// $button1-font-color: 1;
+// $button1-border-color: 1;
+// $button1-border-radius: 1px;
+
+// $button1-font-background-color-hover: 1;
+// $button1-font-color-hover: 1;
+// $button1-border-color-hover: 1;
+// $button1-border-radius-hover: 1px;
+
+// $button1-font-background-color-pressed: 1;
+// $button1-font-color-pressed: 1;
+// $button1-border-color-pressed: 1;
+// $button1-border-radius-pressed: 1px;
+
+// $button1-font-background-color-focused: 1;
+// $button1-font-color-pressed-focused: 1;
+// $button1-border-color-pressed-focused: 1;
+// $button1-border-radius-pressed-focused: 1px;
+
+
+// $button2-font-family: 1;
+// $button2-font-weight: 1;
+// $button2-font-size: 1;
+
+// $button2-font-background-color: 1;
+// $button1-font-color: 1;
+// $button2-border-color: 1;
+// $button2-border-radius: 1px;
+
+// $button2-font-background-color-hover: 1;
+// $button2-font-color-hover: 1;
+// $button2-border-color-hover: 1;
+// $button2-border-radius-hover: 1px;
+
+// $button2-font-background-color-pressed: 1;
+// $button2-font-color-pressed: 1;
+// $button2-border-color-pressed: 1;
+// $button2-border-radius-pressed: 1px;
+
+// $button2-font-background-color-focused: 1;
+// $button2-font-color-pressed-focused: 1;
+// $button2-border-color-pressed-focused: 1;
+// $button2-border-radius-pressed-focused: 1px;
+
+
+// $footer-font-family: 1;
+// $footer-font-weight: 1;
+// $footer-font-size: 1;
+// $footer-font-color: 1;
+
+
+// $misc-page-line-seperator: 1px solid #ffffff;
+
+
+// $input-background: 1;
+// $footer-font-weight: 1;
+// $footer-font-size: 1;
+// $footer-font-color: 1;
